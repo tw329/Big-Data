@@ -1,0 +1,23 @@
+MAP :
+PairsFreqsMap :
+
+	key   : paired string
+	value : count of key
+
+SingleFreqMap :
+
+	key   : single string
+	value : count of key
+
+REDUCE :
+RelPairFeqMap :
+
+	key   : PairsFreqsMap.key
+	value : relative frequency of the two string in the key
+	        get count of the first word of the pair from SingleFreqMap.value
+	        get count of the pair from PairsFreqsMap.value
+		count(Pair)/count(FirstWordofPair)
+
+
+SETTING :
+run on my local vitrualbox ubuntu 16.04 LTS single node hadoop-2.6.5 

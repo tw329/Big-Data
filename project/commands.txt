@@ -1,0 +1,17 @@
+After start hadoop, run the code with "hadoop jar tophundred.jar 100KwikiText.txt ~/ouptut" can get the result.
+
+
+service ssh restart
+hadoop namenode -format
+hadoop datanode -format
+hdfs namenode -format
+hdfs datanode -format
+start-dfs.sh
+start-yarn.sh
+
+jps   //to check if everything runs
+
+hadoop jar tophundred.jar 100KwikiText.txt ~/ouptut
+
+cd ~/output
+vim part-r-00000

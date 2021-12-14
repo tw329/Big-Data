@@ -1,0 +1,7 @@
+First, read the file two time in different ways, one read two words a time and one read one word a time.
+
+Then count the number and see if it is paired, if paired, then go to PairsFreqsMap, else, go to SingleFreqMap.
+
+Then as the relative frequency defined, wrote the relative frequency of each pair into RelPairFeqMap.
+
+Then sort and get the top 100 pairs into TopHundredMap
